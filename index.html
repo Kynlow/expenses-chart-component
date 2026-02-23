@@ -17,8 +17,17 @@
 			<h1>Gérer vos dépenses MAINTENANT !</h1>
 			<section>
 				<form action="">
-					<input type="text" placeholder="Votre dépence" id="input1"/>
-					<button>Ajouter une dépence</button>
+					<div class="column">
+						<input
+							type="text"
+							placeholder="Votre dépence"
+							id="input1"
+                            required
+						/>
+						<label for="input1"></label>
+					</div>
+
+					<button type="submit">Ajouter une dépence</button>
 				</form>
 				<article id="itemContainer">
 					<!-- <div class="item">8 Chips</div> -->
@@ -26,6 +35,6 @@
 			</section>
 			<h2>Aucune dépenses :(</h2>
 		</main>
-        <script src="app.js"></script>
+		<script src="app.js"></script>
 	</body>
 </html>

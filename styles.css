@@ -41,10 +41,9 @@ input {
 	border: none;
 	border-radius: 20px;
 	height: 80px;
-	width: 73%;
 	display: flex;
 	padding: 10px;
-    color: #92857a;
+	color: #92857a;
 	font-weight: 700;
 	font-size: 32px;
 }
@@ -60,6 +59,7 @@ button {
 	font-weight: 700;
 	font-size: 18px;
 	border: none;
+    height: 80px;
 }
 h2 {
 	font-weight: 700;
@@ -74,10 +74,34 @@ h2 {
 	border-radius: 20px;
 	font-weight: 700;
 	font-size: 24px;
-    padding: 24px 32px;
+	padding: 24px 32px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
 }
 .itemContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.trash {
+	background: url(trash-can-with-cover-svgrepo-com.svg);
+    background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+}
+.trash:hover {
+	background: url(trash-can-uncovered-svgrepo-com.svg);
+    background-size: 40px 40px;
+    transform: translateX(20px);
+    transform: translateY(6px);
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 73%;
+}
+label {
+    color: red;
 }
